@@ -17,9 +17,9 @@ data =  {
 "practice_id": "wd"
 }
 
-data = json.dumps(data)
+data2 = json.dumps(data)
 headers = {"Content-Type": "application/json"}
-response = requests.request("POST",url, data=data, headers=headers)
+response = requests.request("POST",url, data=data2, headers=headers)
 print(f"response.status_code: {response.status_code}")
 
 if response.status_code == 200:
